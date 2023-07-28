@@ -39,7 +39,7 @@ bash "${STEAMAPPDIR}/srcds_run" -game "${STEAMAPP}" -console -autoupdate \
                         -port "${SRCDS_PORT}" \
                         +tv_port "${SRCDS_TV_PORT}" \
                         +clientport "${SRCDS_CLIENT_PORT}" \
-                        +maxplayers "${SRCDS_MAXPLAYERS}" \
+                        -unrestricted_maxplayers "${SRCDS_MAXPLAYERS}" \
                         +map "${SRCDS_STARTMAP}" \
                         +sv_setsteamaccount "${SRCDS_TOKEN}" \
                         +rcon_password "${SRCDS_RCONPW}" \
@@ -47,4 +47,3 @@ bash "${STEAMAPPDIR}/srcds_run" -game "${STEAMAPP}" -console -autoupdate \
                         +sv_region "${SRCDS_REGION}" \
                         -ip "${SRCDS_IP}" \
                         -authkey "${SRCDS_WORKSHOP_AUTHKEY}" \
-                        -unrestricted_maxplayers
